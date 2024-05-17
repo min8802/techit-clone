@@ -75,3 +75,9 @@
       format("woff");
   }
 }
+
+@layer components {
+    .nav-button-style {
+        @apply px-4 py-5 font-semibold text-techit-gray-300;
+    }
+}
