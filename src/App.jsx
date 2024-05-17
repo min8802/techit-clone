@@ -2,6 +2,7 @@ import { useState } from "react";
 import TopBanner from "./components/TopBanner";
 import { useEffect } from "react";
 import Header from "./components/Header";
+import SlideBanner from "./components/SlideBanner";
 
 const App = () => {
   const [isViewed, setIsViewed] = useState(false);
@@ -18,6 +19,7 @@ const App = () => {
     <div className="font-pretendard">
       {!isViewed && <TopBanner setIsViewed={setIsViewed}/>}
       <Header/>
+      <SlideBanner/>
     </div>
   );
 };
